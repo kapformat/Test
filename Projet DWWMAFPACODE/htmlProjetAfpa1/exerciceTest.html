@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>													<!--STRUCTURE ET EN-TETE DU DOCUMENT-->
+		<title>La mise en page du langage HTML </title>
+		<meta charset="utf-8" />		<!--Titre principale de la page(onglet)-->
+	</head>
+	<body>													<!--LE CORPS DU DOCUMENT(ce qui s affiche)-->
+		<img src= "imageHtml.jpeg" alt="image HTML" />
+				
+		<h1>Listes</h1>
+			<ol>
+				<li>Rouge</li>
+				<li>Vert</li>								<!--LISTE ORDONNEE (LISTES A NUMEROS)-->
+				<li>Bleu</li>
+			</ol>
+			<ul>
+				<li>Rouge</li>
+				<li>Vert</li>								<!--LISTE NON ORDONNEE (LISTES A PUCES-->
+				<li>Bleu</li>
+			</ul>
+			<dl>
+				<dt>Terme</dt>
+				<dd>def1</dd>								<!--LISTE DE DEFINITIONS-->
+				<dd>def2</dd>
+				<dd>def3</dd>
+			</dl>
+				<ol type="i">
+					<li>item1
+						<dl>
+							<dt>Terme</dt>					<!--COMBINER LES TYPES DE LISTES-->
+								<dd>def1</dd>
+						</dl>
+					</li>
+				</ol>
+				
+				
+		<h2>Ce document</h2>								<!--titre h2-->
+		<h3>HTML</h3>
+		<h4>est encore très simple</h4>
+			<p>son objectif est de montrer les principales balises de mise en forme du
+			texte. Les lignes précédentes ont mis en évidence l’action des balises
+			&lt;hxx&gt; qui permettent de créer et disposer des titres de taille
+			plus ou moins grande.
+			</p>
+		<hr />
+			<p>La balise &lt;hr /&gt; permet l'affichage d'une ligne horizontale
+			</p>
+		<hr />
+			
+		<div>La balise &lt;div&gt; : Voici un texte écrit dans une balise
+		&lt;div&gt; . La balise div (pour division) peut être utilisée
+		pour diviser un document en plusieurs sections qui seront, par exemple,
+		présentée chacune de manière différente.
+		La présentation (alignement, couleur, marges, etc...) sera défini via des
+		feuilles de style CSS.
+		</div>
+		<hr />
+			<p>La balise &lt;span&gt; permet d'identifier un bout de texte afin de lui
+			appliquer un <span style="color:red;">style</span> (ici, la couleur
+			rouge, à l'aide d'un style CSS dont on verra la syntaxe plus tard.)</p>
+		<hr />
+			<p>La balise &lt;p&gt; : permet de créer un nouveau paragraphe. La différence
+			entre la balise p et div se situe au niveau du type d'enfants acceptés:
+			à l'inverse de la division qui n'impose aucune restriction, un paragraphe
+			ne peut contenir que des éléments de type inline
+			</p>
+		<hr/>
+			<p align="center">On peut utiliser l'attribut align (ici center),</p>
+			<p align="center">mais ceci est déconseillé : </p>
+			<p align="center">il est préférable de passer par des styles CSS</p>
+		<hr />
+			<p>La balise &lt;br /&gt; <br /> permet un retour à la ligne</p>
+	</body>
+</html>
